@@ -1,28 +1,21 @@
 using UnityEngine;
-public class PlayerMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
-    Animator anim;
-
     Rigidbody2D body;
 
     float horizontal;
     float vertical;
 
     public float runSpeed = 10.0f;
-
-    private bool isEye;
-
-    private bool Movement;
-
+    public GameObject Enemy;
 
     // Start is called before the first frame update
     void Start()
     {
-        Movement = false;
         body = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        isEye = false;
 
+        Enemy = GameObject.Find("Enemy");
+        Enemy.GetComponent<EnemyMovement>().enabled = false;
     }
 
     // Update is called once per frame
@@ -39,10 +32,6 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-
-            Movement = horizontal != 0;
-            anim.SetBool("Movement", Movement);
-
     }
 
     private void FixedUpdate()
@@ -52,10 +41,9 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Player")
         {
-            isEye = false;
-            Destroy(gameObject);
+            Enemy.GetComponent<EnemyMovement>().enabled = true;
         }
     }
 }
