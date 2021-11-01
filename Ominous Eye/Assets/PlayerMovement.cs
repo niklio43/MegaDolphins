@@ -42,11 +42,12 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            isEye = true;
+            isEye = false;
+            Destroy(gameObject);
         }
     }
 }
