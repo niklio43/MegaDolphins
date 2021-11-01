@@ -31,14 +31,14 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
-        if (horizontal > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        if (horizontal < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
+            if (horizontal > 0)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            if (horizontal < 0)
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            }
 
             Movement = horizontal != 0;
             anim.SetBool("Movement", Movement);

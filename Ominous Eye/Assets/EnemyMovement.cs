@@ -1,6 +1,8 @@
 using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
+    Animator anim;
+
     Rigidbody2D body;
 
     float horizontal;
@@ -9,11 +11,14 @@ public class EnemyMovement : MonoBehaviour
     public float runSpeed = 10.0f;
     public GameObject Enemy;
 
+    private bool lbMovement;
+
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-
+        anim = GetComponent<Animator>();
+        lbMovement = false;
         Enemy = GameObject.Find("Enemy");
         Enemy.GetComponent<EnemyMovement>().enabled = false;
     }
@@ -26,12 +31,15 @@ public class EnemyMovement : MonoBehaviour
 
         if (horizontal > 0)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
         if (horizontal < 0)
         {
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
+
+        lbMovement = horizontal != 0;
+        anim.SetBool("lbMovement", lbMovement);
     }
 
     private void FixedUpdate()
