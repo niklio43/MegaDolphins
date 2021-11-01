@@ -135,10 +135,10 @@ GameObject:
   - component: {fileID: 38014862}
   - component: {fileID: 38014861}
   - component: {fileID: 38014860}
-  - component: {fileID: 38014864}
   - component: {fileID: 38014867}
   - component: {fileID: 38014866}
   - component: {fileID: 38014865}
+  - component: {fileID: 38014864}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -241,7 +241,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38014859}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.07, y: -1.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -261,7 +261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
-  Enemy: []
 --- !u!95 &38014865
 Animator:
   serializedVersion: 3
@@ -334,10 +333,10 @@ GameObject:
   - component: {fileID: 446851295}
   - component: {fileID: 446851294}
   - component: {fileID: 446851293}
-  - component: {fileID: 446851292}
   - component: {fileID: 446851291}
   - component: {fileID: 446851290}
   - component: {fileID: 446851289}
+  - component: {fileID: 446851292}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Enemy
@@ -418,7 +417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
-  Enemy: []
 --- !u!70 &446851293
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -514,8 +512,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446851288}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.81, y: -1.61, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.81, y: -1.6099999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -706,7 +704,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686858695}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -756,7 +754,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1092291707
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -831,7 +829,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092291705}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
