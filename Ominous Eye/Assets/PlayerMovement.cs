@@ -10,8 +10,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 10.0f;
 
-    private bool isEye;
-
     private bool Movement;
 
 
@@ -21,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
         Movement = false;
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        isEye = false;
 
     }
 
@@ -54,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            isEye = false;
             Destroy(gameObject);
         }
     }
