@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isEye;
 
+    public GameObject Enemy;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         isEye = false;
+        Enemy = GameObject.Find("Enemy");
+        Enemy.GetComponent<PlayerMovement>().enabled = false;
+
     }
 
     // Update is called once per frame
@@ -48,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isEye = false;
             Destroy(gameObject);
+            Enemy.GetComponent<PlayerMovement>().enabled = true;
         }
     }
 }
