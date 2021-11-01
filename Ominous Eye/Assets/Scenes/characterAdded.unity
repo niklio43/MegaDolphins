@@ -133,9 +133,11 @@ GameObject:
   m_Component:
   - component: {fileID: 304492321}
   - component: {fileID: 304492320}
+  - component: {fileID: 304492322}
+  - component: {fileID: 304492323}
   m_Layer: 0
-  m_Name: ScientistLongLegs
-  m_TagString: Untagged
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,6 +207,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &304492322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304492319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b03620f3c056f49a715f1fab834494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 10
+  Enemy: {fileID: 0}
+--- !u!70 &304492323
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304492319}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.009506211, y: 0.015234}
+  m_Size: {x: 0.07954743, y: 0.2692199}
+  m_Direction: 0
 --- !u!1 &643303430
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,9 +440,11 @@ GameObject:
   - component: {fileID: 1092291709}
   - component: {fileID: 1092291708}
   - component: {fileID: 1092291707}
+  - component: {fileID: 1092291713}
   - component: {fileID: 1092291706}
   - component: {fileID: 1092291710}
   - component: {fileID: 1092291711}
+  - component: {fileID: 1092291712}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -449,12 +483,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06916529, y: 0.034582734}
+  m_Offset: {x: 0.081467986, y: 0.034582734}
   serializedVersion: 2
-  m_Radius: 0.40441006
+  m_Radius: 0.40851092
 --- !u!212 &1092291708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -550,3 +584,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 10
   Enemy: {fileID: 0}
+--- !u!95 &1092291712
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092291705}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1092291713
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092291705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.07791668, y: 0.024605155}
+  serializedVersion: 2
+  m_Radius: 0.34795988
