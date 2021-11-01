@@ -59,6 +59,36 @@ TextureImporter:
   - first:
       213: 3306987932144766906
     second: eye_monster_sprite_sheet_19
+  - first:
+      213: -8167561714533384257
+    second: eye_monster_sprite_sheet_13
+  - first:
+      213: 6453214884622996889
+    second: eye_monster_sprite_sheet_20
+  - first:
+      213: 4327491682931632840
+    second: eye_monster_sprite_sheet_21
+  - first:
+      213: -1278394489775010987
+    second: eye_monster_sprite_sheet_22
+  - first:
+      213: -4266376629060886196
+    second: eye_monster_sprite_sheet_23
+  - first:
+      213: -4057434678027477926
+    second: eye_monster_sprite_sheet_24
+  - first:
+      213: -8356931144142082747
+    second: eye_monster_sprite_sheet_25
+  - first:
+      213: -7680273798689886208
+    second: eye_monster_sprite_sheet_26
+  - first:
+      213: 3275525316443242591
+    second: eye_monster_sprite_sheet_27
+  - first:
+      213: -8758489001922829670
+    second: eye_monster_sprite_sheet_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +133,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,7 +155,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,7 +167,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,10 +181,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 139
-        width: 12
-        height: 11
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +202,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 138
-        width: 12
-        height: 11
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +223,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 137
-        width: 12
-        height: 11
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +244,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 107
-        y: 138
-        width: 12
-        height: 11
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +265,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 139
-        y: 139
-        width: 12
-        height: 11
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +286,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 140
-        width: 12
-        height: 11
+        x: 160
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,10 +307,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 141
-        width: 12
-        height: 11
+        x: 192
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,10 +328,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 235
-        y: 140
-        width: 12
-        height: 11
+        x: 224
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,10 +349,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 10
-        y: 104
-        width: 12
-        height: 11
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,10 +370,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_9
       rect:
         serializedVersion: 2
-        x: 43
-        y: 106
-        width: 12
-        height: 11
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,10 +391,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_10
       rect:
         serializedVersion: 2
-        x: 75
-        y: 105
-        width: 12
-        height: 11
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,10 +412,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_11
       rect:
         serializedVersion: 2
-        x: 107
-        y: 106
-        width: 12
-        height: 11
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,10 +433,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_12
       rect:
         serializedVersion: 2
-        x: 11
-        y: 75
-        width: 12
-        height: 11
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,10 +454,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_14
       rect:
         serializedVersion: 2
-        x: 43
-        y: 76
-        width: 12
-        height: 11
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,10 +475,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_15
       rect:
         serializedVersion: 2
-        x: 75
-        y: 77
-        width: 12
-        height: 11
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,10 +496,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_16
       rect:
         serializedVersion: 2
-        x: 139
-        y: 75
-        width: 12
-        height: 13
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -487,10 +517,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_17
       rect:
         serializedVersion: 2
-        x: 171
-        y: 71
-        width: 12
-        height: 17
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,10 +538,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_18
       rect:
         serializedVersion: 2
-        x: 203
-        y: 76
-        width: 12
-        height: 11
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -529,10 +559,10 @@ TextureImporter:
       name: eye_monster_sprite_sheet_19
       rect:
         serializedVersion: 2
-        x: 235
-        y: 75
-        width: 12
-        height: 11
+        x: 224
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,6 +572,216 @@ TextureImporter:
       bones: []
       spriteID: abf0efbc008c4ed20800000000000000
       internalID: 3306987932144766906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf382ce4edf6ae80800000000000000
+      internalID: -8167561714533384257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99597393fbc6e8950800000000000000
+      internalID: 6453214884622996889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cae891f1c65e0c30800000000000000
+      internalID: 4327491682931632840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bc42a1cfa324ee0800000000000000
+      internalID: -1278394489775010987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c412cc26f09cac4c0800000000000000
+      internalID: -4266376629060886196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c12d458a811b7c0800000000000000
+      internalID: -4057434678027477926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d230db667360c80800000000000000
+      internalID: -8356931144142082747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00079530caf2a6590800000000000000
+      internalID: -7680273798689886208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50066bbbe0057d20800000000000000
+      internalID: 3275525316443242591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eye_monster_sprite_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92693f38a8937680800000000000000
+      internalID: -8758489001922829670
       vertices: []
       indices: 
       edges: []
