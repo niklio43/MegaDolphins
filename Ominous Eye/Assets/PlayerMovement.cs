@@ -14,10 +14,13 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject Enemy;
 
+    private bool Movement;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        Movement = false;
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         isEye = false;
@@ -40,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
+
+        Movement = horizontal != 0;
+        anim.SetBool("Movement", Movement);
+
     }
 
     private void FixedUpdate()
