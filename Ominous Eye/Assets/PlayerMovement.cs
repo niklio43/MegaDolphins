@@ -23,10 +23,9 @@ public class PlayerMovement : MonoBehaviour
         Movement = false;
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        isEye = false;
+        isEye = true;
         Enemy = GameObject.Find("Enemy");
         Enemy.GetComponent<PlayerMovement>().enabled = false;
-
     }
 
     // Update is called once per frame
@@ -43,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
+
         if (isEye)
         {
             Movement = horizontal != 0;
