@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     public float runSpeed = 10.0f;
 
     private bool isJumping;
-    private bool isEnemy;
+    public bool isEnemy;
 
     private float jumpForce;
     private float moveSpeed;
