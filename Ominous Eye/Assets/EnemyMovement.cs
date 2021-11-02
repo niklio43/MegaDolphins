@@ -19,11 +19,16 @@ public class EnemyMovement : MonoBehaviour
     private bool lbMovement;
     private bool lbJump;
 
+    private bool dead;
+
+    private Vector3 pos;
+
     public GameObject PlayerPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
+        dead = false;
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         lbMovement = false;
@@ -34,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
         jumpForce = 40f;
         this.gameObject.GetComponent<EnemyMovement>().enabled = false;
 
+        pos = transform.position;
     }
 
     void Update()
@@ -45,12 +51,14 @@ public class EnemyMovement : MonoBehaviour
         lbJump = moveVertical != 0;
         anim.SetBool("lbMovement", lbMovement);
         anim.SetBool("lbJump", lbJump);
-
+        anim.SetBool("lbExplode", dead);
+        pos = this.gameObject.transform.position;
         if (Input.GetKeyDown(KeyCode.E))
         {
+            dead = true;
             isEnemy = false;
-            Destroy(this.gameObject);
-            Instantiate(PlayerPrefab);
+            Destroy(this.gameObject, 1);
+            Instantiate(PlayerPrefab, pos, Quaternion.identity);
 
         }
 
