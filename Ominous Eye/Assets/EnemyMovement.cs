@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     float horizontal;
     float vertical;
 
+    public float runSpeed = 10.0f;
 
     private bool isJumping;
     private bool isEnemy;

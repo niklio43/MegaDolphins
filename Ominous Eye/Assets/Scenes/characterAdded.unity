@@ -175,7 +175,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 10
   m_Material: {fileID: 0}
@@ -260,6 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a26f21cf5296944486f3c333289735d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSpeed: 10
 --- !u!95 &38014865
 Animator:
   serializedVersion: 3
@@ -415,6 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a26f21cf5296944486f3c333289735d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSpeed: 10
 --- !u!70 &446851293
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -444,7 +446,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 10
   m_Material: {fileID: 0}
@@ -530,7 +532,7 @@ GameObject:
   - component: {fileID: 643303431}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
