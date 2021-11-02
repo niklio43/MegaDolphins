@@ -10,24 +10,19 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 10.0f;
 
-    private bool isEye;
-
-    public GameObject Enemy;
-
     private bool Movement;
 
+
+    // Start is called before the first frame update
     void Start()
     {
-        isEye = true;
         Movement = false;
-
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        Enemy = GameObject.Find("Enemy");
-        Enemy.GetComponent<PlayerMovement>().enabled = false;
     }
 
+    // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -35,22 +30,16 @@ public class PlayerMovement : MonoBehaviour
 
             if (horizontal > 0)
             {
-             transform.eulerAngles = new Vector3(0, 0, 0);
+                transform.eulerAngles = new Vector3(0, 0, 0);
             }
             if (horizontal < 0)
             {
-             transform.eulerAngles = new Vector3(0, 180, 0);
+                transform.eulerAngles = new Vector3(0, 180, 0);
             }
 
-        if (isEye)
-        {
+            Movement = horizontal != 0;
+            anim.SetBool("Movement", Movement);
 
-                 Movement = horizontal != 0;
-                 anim.SetBool("Movement", Movement);
-
-        }
-
-        Debug.Log("update: " + isEye);
     }
 
     private void FixedUpdate()
@@ -62,10 +51,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            isEye = false;
             Destroy(gameObject);
-            Enemy.GetComponent<PlayerMovement>().enabled = true;
-            Debug.Log("collision: " + isEye);
         }
     }
 }
