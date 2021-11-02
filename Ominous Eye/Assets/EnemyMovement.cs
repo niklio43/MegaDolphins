@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 public class EnemyMovement : MonoBehaviour
 {
     Animator anim;
@@ -57,9 +58,8 @@ public class EnemyMovement : MonoBehaviour
         {
             dead = true;
             isEnemy = false;
-            Destroy(this.gameObject, 1);
+            Destroy(this.gameObject); //not working with cooldown for some reason
             Instantiate(PlayerPrefab, pos, Quaternion.identity);
-
         }
 
     }
@@ -105,4 +105,5 @@ public class EnemyMovement : MonoBehaviour
             isJumping = true;
         }
     }
+
 }

@@ -43,8 +43,8 @@ public class PlayerMovement : MonoBehaviour
                 transform.eulerAngles = new Vector3(0, 180, 0);
             }
         }
-            Movement = horizontal != 0;
-            anim.SetBool("Movement", Movement);
+        Movement = horizontal != 0;
+        anim.SetBool("Movement", Movement);
 
     }
 
