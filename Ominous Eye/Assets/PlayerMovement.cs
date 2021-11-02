@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     float horizontal;
     float vertical;
 
+    private bool isEye;
+
     public float runSpeed = 10.0f;
 
     private bool Movement;
@@ -16,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        isEye = true;
         Movement = false;
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -25,8 +29,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+        if (isEye)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
 
             if (horizontal > 0)
             {
@@ -36,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.eulerAngles = new Vector3(0, 180, 0);
             }
-
+        }
             Movement = horizontal != 0;
             anim.SetBool("Movement", Movement);
 
@@ -51,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            isEye = false;
             Destroy(gameObject);
         }
     }

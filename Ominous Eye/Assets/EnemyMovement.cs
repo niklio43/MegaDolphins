@@ -17,6 +17,9 @@ public class EnemyMovement : MonoBehaviour
     private float moveVertical;
 
     private bool lbMovement;
+    private bool lbJump;
+
+    public GameObject PlayerPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,7 @@ public class EnemyMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         lbMovement = false;
+        lbJump = false;
         isEnemy = false;
         isJumping = false;
         moveSpeed = 3f;
@@ -38,7 +42,18 @@ public class EnemyMovement : MonoBehaviour
         moveVertical = vertical = Input.GetAxisRaw("Vertical");
 
         lbMovement = moveHorizontal != 0;
+        lbJump = moveVertical != 0;
         anim.SetBool("lbMovement", lbMovement);
+        anim.SetBool("lbJump", lbJump);
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isEnemy = false;
+            Destroy(this.gameObject);
+            Instantiate(PlayerPrefab);
+
+        }
+
     }
 
     private void FixedUpdate()
