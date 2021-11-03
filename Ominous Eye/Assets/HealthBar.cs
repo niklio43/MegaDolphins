@@ -10,21 +10,21 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        healthBarParent = gameObject;
+        //healthBarParent = gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-        eye = GameObject.Find("Player");
+        //eye = GameObject.Find("Player");
 
-        if(eye != null)
-        {
-            healthBarParent.SetActive(false);
-        }
-        if(eye == null)
-        {
-            healthBarParent.SetActive(true);
-        }
+        //if(eye != null)
+        //{
+        //    healthBarParent.SetActive(false);
+        //}
+        //if(eye == null)
+        //{
+        //    healthBarParent.SetActive(true);
+        //}
     }
 }
