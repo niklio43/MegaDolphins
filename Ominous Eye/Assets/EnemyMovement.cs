@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 public class EnemyMovement : MonoBehaviour
 {
     Animator anim;
@@ -17,19 +18,29 @@ public class EnemyMovement : MonoBehaviour
     private float moveVertical;
 
     private bool lbMovement;
+    private bool lbJump;
+
+    private bool dead;
+
+    private Vector3 pos;
+
+    public GameObject PlayerPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
+        dead = false;
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         lbMovement = false;
+        lbJump = false;
         isEnemy = false;
         isJumping = false;
         moveSpeed = 3f;
         jumpForce = 40f;
         this.gameObject.GetComponent<EnemyMovement>().enabled = false;
 
+        pos = transform.position;
     }
 
     void Update()
@@ -38,7 +49,19 @@ public class EnemyMovement : MonoBehaviour
         moveVertical = vertical = Input.GetAxisRaw("Vertical");
 
         lbMovement = moveHorizontal != 0;
+        lbJump = moveVertical != 0;
         anim.SetBool("lbMovement", lbMovement);
+        anim.SetBool("lbJump", lbJump);
+        anim.SetBool("lbExplode", dead);
+        pos = this.gameObject.transform.position;
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            dead = true;
+            isEnemy = false;
+            Destroy(this.gameObject); //not working with cooldown for some reason
+            Instantiate(PlayerPrefab, pos, Quaternion.identity);
+        }
+
     }
 
     private void FixedUpdate()
@@ -82,4 +105,5 @@ public class EnemyMovement : MonoBehaviour
             isJumping = true;
         }
     }
+
 }
