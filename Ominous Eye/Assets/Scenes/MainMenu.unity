@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498806465}
-  - component: {fileID: 498806464}
+  - component: {fileID: 498806466}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -267,18 +267,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &498806464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498806463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34eaaca71e356e542af7915481bf7ce9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &498806465
 Transform:
   m_ObjectHideFlags: 0
@@ -293,6 +281,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498806466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498806463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34eaaca71e356e542af7915481bf7ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &517664851
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 550925334}
   - component: {fileID: 550925333}
   - component: {fileID: 550925332}
-  - component: {fileID: 550925335}
+  - component: {fileID: 550925336}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -482,20 +482,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &550925335
+--- !u!114 &550925336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550925331}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7282beab27b93b04a9604f2e510b4f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: fd18bcdf96c0e044caeb4aaca5fea025, type: 3}
-  cursorMode: 0
+  cursorMode: 1
   hotSpot: {x: 0, y: 0}
 --- !u!1 &587956836
 GameObject:
@@ -708,8 +708,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52, y: 290.66}
-  m_SizeDelta: {x: 1323.5093, y: 498.6815}
+  m_AnchoredPosition: {x: 0.00013351, y: 302}
+  m_SizeDelta: {x: 1136.6001, y: 428.2564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &703854755
 MonoBehaviour:
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 326efd87c3955e943844482f59220e39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2e2d1fe5c9737534b85131f5e83c843d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -894,8 +894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123, y: -107}
-  m_SizeDelta: {x: 883.2932, y: 451.3588}
+  m_AnchoredPosition: {x: 18.6, y: 1.0272}
+  m_SizeDelta: {x: 334.5435, y: 170.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889015972
 MonoBehaviour:
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9a8591ba504e7ba4dae75a786906d394, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe87623679554ac48a3e2bac8927a9f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -969,7 +969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0054855, y: 0.00053024}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314130028
@@ -1046,7 +1046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207, y: -234.4246}
+  m_AnchoredPosition: {x: -0.0054932, y: -227.01}
   m_SizeDelta: {x: 735.68, y: 168.8956}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345961461
@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7254902, g: 0.20784314, b: 0.20784314, a: 0.6392157}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1093,8 +1093,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
+      - m_Target: {fileID: 498806466}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7264151, g: 0.20901564, b: 0.20901564, a: 0.6392157}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1226,7 +1226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 498806464}
+      - m_Target: {fileID: 498806466}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: NextScene
         m_Mode: 1
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1310,8 +1310,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: -79}
-  m_SizeDelta: {x: 1362.8939, y: 941.8624}
+  m_AnchoredPosition: {x: 21, y: 0}
+  m_SizeDelta: {x: 341.1705, y: 235.7745}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854499288
 MonoBehaviour:
@@ -1333,7 +1333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a4c5931f529feb4d9990f76389152cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 714956715bb8ca74a8712d9226e3d28b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

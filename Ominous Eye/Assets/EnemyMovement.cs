@@ -20,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
     private bool lbMovement;
     private bool lbJump;
 
-    private bool dead;
+    private bool lbExplode;
 
     private Vector3 pos;
 
@@ -29,7 +29,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dead = false;
+        lbExplode = false;
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         lbMovement = false;
@@ -52,11 +52,11 @@ public class EnemyMovement : MonoBehaviour
         lbJump = moveVertical != 0;
         anim.SetBool("lbMovement", lbMovement);
         anim.SetBool("lbJump", lbJump);
-        anim.SetBool("lbExplode", dead);
+        anim.SetBool("lbExplode", lbExplode);
         pos = this.gameObject.transform.position;
         if (Input.GetKeyDown(KeyCode.E))
         {
-            dead = true;
+            lbExplode = true;
             isEnemy = false;
             Destroy(this.gameObject); //not working with cooldown for some reason
             Instantiate(PlayerPrefab, pos, Quaternion.identity);
